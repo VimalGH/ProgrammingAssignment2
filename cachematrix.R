@@ -30,7 +30,6 @@ cacheSolve <- function(x, ...) {
         }
         data <- x$get()
         message(data)
-        ##m <- mean(data, ...)
         m <- solve(data)
         x$setinvmat(m)
         m
